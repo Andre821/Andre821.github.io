@@ -23,7 +23,6 @@ body {
 {
   margin: 0 auto 0 auto;
  text-align:left;}
-
 #container
 {
   display: block; 
@@ -31,47 +30,38 @@ body {
   position: relative; 
   width: 940px;
 }
-
 #mainpic h1
 {
 	position:absolute;
 text-align:right;
-
 font-size:30px;
-color:#FFF;	
-left:430px;
+color:#FF0000;	
+left:250px;
 top:100px;
 }
-
-
 #mainpic h2
 {
 position:absolute;
 text-align:right;
-color:#E1E7F7;	
-left:550px;
+color:#00FF00;	
+left:380px;
 top:100px;
 }
-
 #mainpic
 {
-background-image:url(images/main.jpg);
+background-image:url(https://i.postimg.cc/8CYPRXYB/img-photoshop.jpg);
 background-repeat:no-repeat;
 width:900px;
 height:402px;
 
 }
-
-
-
+.mySlides {display:none;}
+}
 .lightblue
 {
 color:#B1C6FC	
 	
 }
-
-
-
 
 #menu
 {
@@ -82,7 +72,6 @@ height:69px;
 float:left;
 clear:both;
 }
-
 #content
 {
 width:900px;
@@ -92,13 +81,11 @@ padding-left:10px;
 padding-right:10px;
 padding-bottom:5px;
 }
-
 #footer
 {
 width:inherit;
 height:auto;
 }
-
 #footer h3 a,#footer h3 a:visited
 {
 display:inline;
@@ -107,22 +94,18 @@ font-size:12px;
 text-decoration:none;
 color:#7198E1;
 }
-
-
 #menu ul {
 	list-style: none;
 	padding: 0px;
 	margin-left:auto;
 	width:900px;
 }
-
 #menu li {
 	list-style: none;
 	padding: 0px;	
 	display: inline; 
 	
 }
-
 #menu a {
 	float: left;
 	width: 150px;
@@ -135,18 +118,35 @@ color:#7198E1;
 	padding-top: 17px;
 	font-size: 15px;
 }
-
 #content p
 {
 	
 }
-
 html, body {
 text-align: center;
 }
 p {text-align: left;}
 </style>
 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+</script>
 
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>Projeto</title>
@@ -155,6 +155,12 @@ p {text-align: left;}
 <body>
 <div id="container">
 		<div id="mainpic">
+			<img class="mySlides" src="https://i.postimg.cc/5ty2FWs2/img-html.jpg">
+			<img class="mySlides" src="https://i.postimg.cc/PJsXcpTC/img-css.jpg">
+			<img class="mySlides" src="https://i.postimg.cc/fL0WBjn4/img-javascript.jpg">
+			<img class="mySlides" src="https://i.postimg.cc/8CYPRXYB/img-photoshop.jpg">
+			<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
         	<h1>Portifolio:</h1>
 			<h2><span class="lightblue">André Barbosa Fernandes dos Santos</span></h2>
         </div>
