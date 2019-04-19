@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<style>
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: 12px Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #061C37;
+	background: #1E4297;
+	background-repeat:repeat-x;
+}
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
+
+#container
+{
+  display: block; 
+  height:auto;
+  position: relative; 
+  width: 940px;
+}
+#mainpic h1
+{
+	position:absolute;
+text-align:right;
+font-size:30px;
+color:#FF0000;	
+left:250px;
+top:100px;
+}
+#mainpic h2
+{
+position:absolute;
+text-align:right;
+color:#00FF00;	
+left:380px;
+top:100px;
+}
+#mainpic
+{
+background-image:url(https://i.postimg.cc/8CYPRXYB/img-photoshop.jpg);
+background-repeat:no-repeat;
+width:900px;
+height:402px;
+
+}
+.mySlides {display:none;}
+}
+.lightblue
+{
+color:#B1C6FC	
+	
+}
+
+        #pic { float: right; margin: -30px 0 0 0; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd.clear { float: none; margin: 0; height: auto; }
+#menu
+{
+background-image:url(https://i.postimg.cc/8PkJQybQ/menu.png);
+background-repeat:no-repeat;
+width:940px;
+height:69px;
+float:left;
+clear:both;
+}
+#content
+{
+width:900px;
+height:auto;
+background-color:#FFF;
+padding-left:10px;
+padding-right:10px;
+padding-bottom:5px;
+}
+#footer
+{
+width:inherit;
+height:auto;
+}
+#footer h3 a,#footer h3 a:visited
+{
+display:inline;
+text-align:center;
+font-size:12px;
+text-decoration:none;
+color:#7198E1;
+}
+#menu ul {
+	list-style: none;
+	padding: 0px;
+	margin-left:auto;
+	width:900px;
+}
+#menu li {
+	list-style: none;
+	padding: 0px;	
+	display: inline; 
+	
+}
+#menu a {
+	float: left;
+	width: 150px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	padding-top: 17px;
+	font-size: 15px;
+}
+#content p
+{
+	
+}
+html, body {
+text-align: center;
+}
+p {text-align: left;}
+</style>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Currículo</title>
+</head>
+
+<body>
+<div id="container">
+		<div id="mainpic">
+			<img class="mySlides" src="https://i.postimg.cc/5ty2FWs2/img-html.jpg">
+			<img class="mySlides" src="https://i.postimg.cc/PJsXcpTC/img-css.jpg">
+			<img class="mySlides" src="https://i.postimg.cc/fL0WBjn4/img-javascript.jpg">
+			<img class="mySlides" src="https://i.postimg.cc/8CYPRXYB/img-photoshop.jpg">
+			<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        	<h1>Portifolio:</h1>
+			<h2><span class="lightblue">André Barbosa Fernandes dos Santos</span></h2>
+        </div>
+		
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="https://andre821.github.io/index.html">Início</a></li>
+                <li class="menuitem"><a href="https://andre821.github.io/projeto.html">Projeto</a></li>
+				<li class="menuitem"><a href="https://andre821.github.io/curriculo.html">Currículo</a></li>
+            </ul>
+        </div>		
+		
+		<div id="content">
+   	        <div id="page-wrap">
+    
+        <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
+    
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn">André Barbosa Fernandes dos Santos</h1>
+        
+            <p>
+                Cell: <span class="tel">(41) 99936-9339</span><br />
+                Email: <a class="email" href="mailto:andre821@gmail.com">andre821@gmail.com</a>
+            </p>
+        </div>
+                
+        <div id="Objetivo">
+            <p>
+                Atualmente sou procuro adquirir cada vez mais conhecimento na área de TI (Tecnologia da Informação. Já trabalhei como instrutor de informática onde descobri que a melhor forma de aprimorar os conhecimentos obtidos em sala de aula é passando eles adiante. Trabalhei como web designer para uma loja de produtos esportivos onde pude aprender diferentes formas de colocar os conhecimentos da área em pratica. Também trabalhei recentemente em uma empresa de publicidade atuando diretamente na área de TI produzindo scripts em Shell Script para garantir o funcionamento dos player dos monitores em que os conteúdos eram exibidos. Acredito que cada uma dessas experiências permitiram que eu visse diferentes formas de aplicar o meu conhecimento e adquirir o interesse de procurar muitas outras. 
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Educação</dt>
+            <dd>
+                <h2>Universidade Campos de Andrade</h2>
+                <p><strong>Curso:</strong> Analise e Desenvolvimento de sistemas<br />
+                   <strong>Periodo:</strong> 2º Periodo (cursando)</p>
+            </dd>
+            
+            <dd class="clear"></dd>
+			
+            </dl>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Habilidades:</dt>
+            <dd>
+                <h2>Conhecimento em informatica.</h2>
+                <p><strong>Modulos:</strong> Windows Xp/vista/7, internet, Word, Excel, Publisher, Access, Power point, Front page, Excel avançado, Corel Draw X5, Photoshop CS5, HTML / CSS, Java Script, PHP / MySQL, Flash, Fireworks, Illustraitor, Hardware, manutenção de computadores, manutenção de impressoras, redes, cabeamento estruturado. Linux, Sheel, OpenOffice Writer, Openoffice Calc, Openoffice Impress, Openoffice Base.<br /></p>
+            <dt></dt>
+			</dd>
+			<dd>
+				<h2>Conhecimento em Administração.</h2>
+                <p><strong>Modulos:</strong> Departamento Contábil, Departamento Financeiro, Departamento Comercial, Departamento Pessoal, Relações Interpessoais, Escritório modelo.<br /></p>
+            </dd>
+            
+            <dd class="clear"></dd>
+			
+            </dl>
+		<p>&nbsp;</p>	
+        <p>&nbsp;</p>
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Trabalhos anteriores:</dt>
+            <dd>
+                <h2>Midiaplan.</h2>
+                <p><strong>Cargo:</strong> Analista de TI JR<br /></p>
+				<p><strong>Funções:</strong> Desenvolver   e   implantar   scripts em Shell script voltados para o sistema operacional das maquinas em ambiente externo e interno, escolhendo ferramentas de desenvolvimento. Administrar ambientes   virtual onde as mídias são exibidas,   prestar   suporte   técnico.<br /></p>
+			<dt></dt>
+
+				<h2>Autônomo.</h2>
+                <p><strong>Cargo:</strong> Analista de TI JR<br /></p>
+				<p><strong>Funções:</strong> Desenvolver   e   implantar   scripts em Shell script voltados para o sistema operacional das maquinas em ambiente externo e interno, escolhendo ferramentas de desenvolvimento. Administrar ambientes   virtual onde as mídias são exibidas,   prestar   suporte   técnico.<br /></p>
+
+			<dt></dt>
+
+				<h2>Falconarmas.</h2>
+                <p><strong>Cargo:</strong> Web Designer<br /></p>
+				<p><strong>Funções:</strong> Atualização do site da empresa, pesquisa de produtos, criação de arquivos html, edição de imagens, criação de banners, criação de poster e panfletos, criação de relatórios, pesquisa de preços de concorrentes, manutenção de computadores e impressoras.<br /></p>
+
+			</dd>
+            
+            <dd class="clear"></dd>
+			
+            </dl>
+		<p>&nbsp;</p>	
+        <p>&nbsp;</p>
+            </div>
+
+           <div id="rodape"><h3>Modelo de teste</h3></div>
+      </div>
+   </div>
+</body>
+</html>
